@@ -1,0 +1,5 @@
+This is a demo on how to incorporate the load/performance tests into a build server.
+
+-- To run the project:
+open a console and type in 'mvn clean verify'
+instructions are in the console once the test is run to show the results

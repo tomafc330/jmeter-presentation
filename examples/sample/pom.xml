@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>jmeter-example</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Example jmeter test</name>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>Sonatype Repository</id>
+			<url>https://oss.sonatype.org/content/groups/staging</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.lazerycode.jmeter</groupId>
+				<artifactId>jmeter-maven-plugin</artifactId>
+				<version>1.5.0</version>
+
+				<executions>
+					<execution>
+						<id>jmeter-tests</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jmeter</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<suppressJMeterOutput>false</suppressJMeterOutput>
+					<testResultsTimestamp>false</testResultsTimestamp>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+</project>
+
