@@ -18,3 +18,5 @@ This folder contains more advanced examples for handling the different use cases
 *	Using a random-variable in your test case.
 *	Using a transaction controller to group your test cases.
 *	Using the result of a request in the subsequent request.
+
+Click into the individual folder for more information about each example.
